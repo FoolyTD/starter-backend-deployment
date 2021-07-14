@@ -2,11 +2,11 @@
   "name": "starter-back-end-deployment",
   "version": "1.0.0",
   "description": "",
-  "main": "api/index.js",
+  "main": "api/app.js",
   "scripts": {
-    "dev": "nodemon api/index.js",
+    "dev": "nodemon api/app.js",
     "knex": "knex",
-    "start": "node api/index.js"
+    "start": "node api/app.js"
   },
   "keywords": [],
   "author": "",

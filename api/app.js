@@ -19,6 +19,8 @@ app.use((error, _request, response, _next) => {
   response.status(status).json({ errors: [message] });
 });
 
-app.listen();
+const { PORT = 5000 } = process.env;
+const listener = () => console.log(`Listening on Port ${PORT}!`);
+app.listen(PORT, listener);
 
 module.exports = app;
